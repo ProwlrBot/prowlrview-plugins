@@ -1,0 +1,15 @@
+[plugin]
+name     = "secret-sniffer"
+version  = "0.1.0"
+author   = "kdairatchi"
+license  = "MIT"
+summary  = "Regex-sweeps response bodies for leaked AWS keys, GitHub PATs, Slack tokens, private keys, JWTs."
+category = "passive-scan"
+events   = ["on_response"]
+severity_range = ["medium", "critical"]
+tags     = ["secrets", "pii", "leak"]
+
+[runtime]
+engine = "lua"
+entry  = "main.lua"
+min_prowlrview = "0.2.0"

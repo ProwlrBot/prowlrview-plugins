@@ -1,0 +1,15 @@
+[plugin]
+name = "waf-fingerprint"
+version = "0.1.0"
+author = "kdairatchi"
+license = "MIT"
+summary = "Identifies the WAF/CDN in front (Cloudflare, Akamai, Imperva, AWS WAF, Sucuri) and tags the host."
+category = "recon"
+events = ["on_response"]
+severity_range = ["info", "info"]
+tags = ["waf", "cdn", "recon"]
+
+[runtime]
+engine = "lua"
+entry = "main.lua"
+min_prowlrview = "0.2.0"

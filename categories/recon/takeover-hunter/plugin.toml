@@ -1,0 +1,15 @@
+[plugin]
+name = "takeover-hunter"
+version = "0.1.0"
+author = "kdairatchi"
+license = "MIT"
+summary = "Flags responses matching known subdomain takeover fingerprints (GitHub Pages, Heroku, S3, Azure, Fastly)."
+category = "recon"
+events = ["on_response", "on_node"]
+severity_range = ["high", "critical"]
+tags = ["takeover", "dns", "recon"]
+
+[runtime]
+engine = "lua"
+entry = "main.lua"
+min_prowlrview = "0.2.0"

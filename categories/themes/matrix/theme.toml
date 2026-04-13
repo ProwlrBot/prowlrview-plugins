@@ -1,0 +1,13 @@
+name = "matrix"
+background = "#000000"
+foreground = "#00ff41"
+border = "#008f11"
+accent = "#00ff41"
+title = "#39ff14"
+
+[severity]
+critical = "#ff2d2d"
+high     = "#ff6600"
+medium   = "#ffff66"
+low      = "#00ff41"
+info     = "#008f11"

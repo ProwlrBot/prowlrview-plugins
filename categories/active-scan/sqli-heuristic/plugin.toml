@@ -1,0 +1,15 @@
+[plugin]
+name = "sqli-heuristic"
+version = "0.1.0"
+author = "kdairatchi"
+license = "MIT"
+summary = "Flags responses containing SQL error fragments (mysql_, ORA-, PG::, SQLSTATE) — fast oracle."
+category = "active-scan"
+events = ["on_response"]
+severity_range = ["medium", "high"]
+tags = ["sqli", "oracle", "error"]
+
+[runtime]
+engine = "lua"
+entry = "main.lua"
+min_prowlrview = "0.2.0"

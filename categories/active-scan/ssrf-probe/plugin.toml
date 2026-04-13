@@ -1,0 +1,15 @@
+[plugin]
+name = "ssrf-probe"
+version = "0.1.0"
+author = "kdairatchi"
+license = "MIT"
+summary = "Watches for URL-valued query params and flags them as SSRF surface."
+category = "active-scan"
+events = ["on_request"]
+severity_range = ["medium", "high"]
+tags = ["ssrf", "url", "redirect"]
+
+[runtime]
+engine = "lua"
+entry = "main.lua"
+min_prowlrview = "0.2.0"

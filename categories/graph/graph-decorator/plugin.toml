@@ -1,0 +1,15 @@
+[plugin]
+name = "graph-decorator"
+version = "0.1.0"
+author = "kdairatchi"
+license = "MIT"
+summary = "Paints nodes by tech stack (WordPress, Laravel, Nginx, Cloudflare) and tags /admin routes."
+category = "graph"
+events = ["on_node"]
+severity_range = ["info", "low"]
+tags = ["decoration", "tech", "visual"]
+
+[runtime]
+engine = "lua"
+entry = "main.lua"
+min_prowlrview = "0.2.0"

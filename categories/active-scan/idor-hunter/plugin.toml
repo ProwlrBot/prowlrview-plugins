@@ -1,0 +1,15 @@
+[plugin]
+name     = "idor-hunter"
+version  = "0.1.0"
+author   = "kdairatchi"
+license  = "MIT"
+summary  = "Flags numeric-ID API paths as IDOR candidates; marks PII leaks in JSON responses."
+category = "active-scan"
+events   = ["on_request", "on_response"]
+severity_range = ["low", "high"]
+tags     = ["idor", "authz", "api"]
+
+[runtime]
+engine = "lua"
+entry  = "main.lua"
+min_prowlrview = "0.2.0"

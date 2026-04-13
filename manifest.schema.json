@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "prowlrview plugin manifest",
+  "type": "object",
+  "required": ["plugin", "runtime"],
+  "properties": {
+    "plugin": {
+      "type": "object",
+      "required": ["name", "version", "author", "license", "summary", "category", "events"],
+      "properties": {
+        "name":     { "type": "string", "pattern": "^[a-z0-9][a-z0-9-]{1,48}$" },
+        "version":  { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
+        "author":   { "type": "string" },
+        "license":  { "type": "string", "examples": ["MIT", "Apache-2.0", "GPL-3.0"] },
+        "summary":  { "type": "string", "maxLength": 200 },
+        "category": { "enum": ["recon", "passive-scan", "active-scan", "graph", "themes"] },
+        "events":   {
+          "type": "array",
+          "items": { "enum": ["on_request", "on_response", "on_finding", "on_node", "on_tick"] }
+        },
+        "severity_range": {
+          "type": "array",
+          "items": { "enum": ["info", "low", "medium", "high", "critical"] }
+        },
+        "tags": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "runtime": {
+      "type": "object",
+      "required": ["engine", "entry"],
+      "properties": {
+        "engine":        { "enum": ["lua", "wasm"] },
+        "entry":         { "type": "string" },
+        "min_prowlrview":{ "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" }
+      }
+    }
+  }
+}

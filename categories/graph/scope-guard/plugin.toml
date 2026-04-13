@@ -1,0 +1,15 @@
+[plugin]
+name = "scope-guard"
+version = "0.1.0"
+author = "kdairatchi"
+license = "MIT"
+summary = "Blocks out-of-scope requests in proxy mode; green/red tags on the graph."
+category = "graph"
+events = ["on_request"]
+severity_range = ["info", "info"]
+tags = ["scope", "safety", "proxy"]
+
+[runtime]
+engine = "lua"
+entry = "main.lua"
+min_prowlrview = "0.2.0"

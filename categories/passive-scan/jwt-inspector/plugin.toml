@@ -1,0 +1,15 @@
+[plugin]
+name = "jwt-inspector"
+version = "0.1.0"
+author = "kdairatchi"
+license = "MIT"
+summary = "Finds JWTs in responses; flags alg=none, weak HS256 secrets, long-lived exp, kid traversal."
+category = "passive-scan"
+events = ["on_response"]
+severity_range = ["low", "critical"]
+tags = ["jwt", "crypto", "auth"]
+
+[runtime]
+engine = "lua"
+entry = "main.lua"
+min_prowlrview = "0.2.0"

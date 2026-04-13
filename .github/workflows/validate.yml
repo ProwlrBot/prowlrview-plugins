@@ -1,0 +1,14 @@
+name: validate
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update && sudo apt-get install -y lua5.3
+      - run: ln -sf /usr/bin/luac5.3 /usr/local/bin/luac
+      - run: bash tools/validate.sh

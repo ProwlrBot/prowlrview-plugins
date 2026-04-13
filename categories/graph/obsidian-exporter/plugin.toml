@@ -1,0 +1,15 @@
+[plugin]
+name = "obsidian-exporter"
+version = "0.1.0"
+author = "kdairatchi"
+license = "MIT"
+summary = "Periodically appends findings to an Obsidian daily note under 04 - Hunt Journal."
+category = "graph"
+events = ["on_finding"]
+severity_range = ["low", "critical"]
+tags = ["obsidian", "export", "notes"]
+
+[runtime]
+engine = "lua"
+entry = "main.lua"
+min_prowlrview = "0.2.0"

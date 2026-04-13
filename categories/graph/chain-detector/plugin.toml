@@ -1,0 +1,15 @@
+[plugin]
+name = "chain-detector"
+version = "0.1.0"
+author = "kdairatchi"
+license = "MIT"
+summary = "Highlights findings that can chain (IDOR+auth-bypass, open-redirect+OAuth, SSRF+cloud-metadata)."
+category = "graph"
+events = ["on_finding", "on_tick"]
+severity_range = ["medium", "critical"]
+tags = ["chain", "impact", "escalation"]
+
+[runtime]
+engine = "lua"
+entry = "main.lua"
+min_prowlrview = "0.2.0"
