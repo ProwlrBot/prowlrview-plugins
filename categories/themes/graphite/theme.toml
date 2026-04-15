@@ -1,0 +1,13 @@
+name = "graphite"
+background = "#2b2b2b"
+foreground = "#e5e5e5"
+border = "#3e3e3e"
+accent = "#c08cc0"
+title = "#f0f0f0"
+
+[severity]
+critical = "#e06c75"
+high     = "#d19a66"
+medium   = "#e5c07b"
+low      = "#98c379"
+info     = "#abb2bf"

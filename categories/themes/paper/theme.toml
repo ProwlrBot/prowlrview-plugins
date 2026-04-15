@@ -1,0 +1,13 @@
+name = "paper"
+background = "#f7f5f0"
+foreground = "#1a1a1a"
+border = "#d8d4cc"
+accent = "#6b5b95"
+title = "#2c2a26"
+
+[severity]
+critical = "#a8321c"
+high     = "#c96f1e"
+medium   = "#b58900"
+low      = "#4f7a3a"
+info     = "#6b6b6b"

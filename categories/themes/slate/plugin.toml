@@ -1,0 +1,12 @@
+[plugin]
+name = "slate"
+version = "0.2.0"
+author = "kdairatchi"
+license = "MIT"
+summary = "Editorial dark slate with a cool blue accent. GitHub-style severity ramp."
+category = "themes"
+events = []
+
+[runtime]
+engine = "lua"
+entry = "theme.toml"

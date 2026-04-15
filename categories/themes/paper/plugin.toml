@@ -1,0 +1,12 @@
+[plugin]
+name = "paper"
+version = "0.2.0"
+author = "kdairatchi"
+license = "MIT"
+summary = "Editorial off-white on warm paper. Muted plum accent, readable severity ramp."
+category = "themes"
+events = []
+
+[runtime]
+engine = "lua"
+entry = "theme.toml"

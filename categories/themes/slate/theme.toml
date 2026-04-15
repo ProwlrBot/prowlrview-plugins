@@ -1,0 +1,13 @@
+name = "slate"
+background = "#1c2128"
+foreground = "#d4d4d4"
+border = "#30363d"
+accent = "#7aa2f7"
+title = "#e6e6e6"
+
+[severity]
+critical = "#d73a49"
+high     = "#e36209"
+medium   = "#dbab09"
+low      = "#28a745"
+info     = "#8b949e"

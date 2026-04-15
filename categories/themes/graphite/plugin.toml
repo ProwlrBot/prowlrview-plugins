@@ -1,0 +1,12 @@
+[plugin]
+name = "graphite"
+version = "0.2.0"
+author = "kdairatchi"
+license = "MIT"
+summary = "Neutral dark gray with a soft orchid accent. Mid-contrast, low-eye-strain."
+category = "themes"
+events = []
+
+[runtime]
+engine = "lua"
+entry = "theme.toml"
