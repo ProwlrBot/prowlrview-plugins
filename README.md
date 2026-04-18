@@ -74,6 +74,10 @@ claude /prowlrview-plugin-author
 3. `make validate` (or let CI do it).
 4. PR with a screenshot/GIF if it affects the graph visually.
 
+## Security
+
+Report suspected vulnerabilities privately — see [SECURITY.md](SECURITY.md).
+
 ## License
 
 Each plugin declares its own license in `plugin.toml`. The registry itself is MIT.
